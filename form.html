@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up Modal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!-- Trigger Button -->
+<div class="btn-wrap">
+    <button type="button" class="btn btn-info signup btn-common nav-btn" data-toggle="modal" data-target="#formModal">
+        Free Consultation
+    </button>
+</div>
+
+<div id="formModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="modalTitle">Sign Up</h4>
+            </div>
+            <div class="modal-body">
+                <!-- Signup Form -->
+                <form id="signupForm" action="your-server-side-script.php" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email:</label>
+                        <input type="email" class="form-control" id="signupEmail" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" class="form-control" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPwd">Password:</label>
+                        <input type="password" class="form-control" id="signupPwd" name="password" required>
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Scripts -->
+        <script>
+            $(document).ready(function() {
+                // If there's a need to dynamically change the modal title or other elements, you can add more here.
+                $('#formModal').on('show.bs.modal', function() {
+                    // Reset the form fields each time the modal is opened
+                    $('#signupForm')[0].reset();
+                });
+            });
+        </script>
+    </body>
+</html>

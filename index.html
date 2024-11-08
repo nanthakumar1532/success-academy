@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Success Academy</title>
+    <link rel="icon" href="assets/img/favicon.png" sizes="20x20" type="image/png">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Load jQuery before using any jQuery code -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .category-section-area {
+        padding: 20px;
+    }
+    
+   
+    
+    .destination-single-item {
+        width: 30%; /* Default width for larger screens */
+        margin-bottom: 20px; /* Space between rows */
+    }
+    
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+        .destination-single-item {
+            width: 100%; /* Full width on mobile */
+            text-align: center; /* Center align text */
+        }
+    
+        .tab-pane {
+            margin-left: 0; /* Reset margin for mobile */
+        }
+    }
+    
+ 
+    .about-section-area {
+        padding: 60px 0;
+    }
+
+    .single-counterup {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .odometer {
+        font-size: 36px;
+        font-weight: bold;
+        color: #764AF1; /* Customize color */
+    }
+
+    @media (max-width: 768px) {
+        .odometer {
+            font-size: 24px; /* Smaller font size for mobile */
+        }
+
+        #destinationCarousel{
+            display:flex;
+        }
+
+    }
+
+        /* Mobile specific styles */
+        @media (max-width: 768px) {
+       
+
+            .carousel-inner .carousel-item .col-sm-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        
+        @media (min-width: 768px) {
+        .carousel-inner .carousel-item .col-sm-12{
+            margin-left: 500px;
+        }}
+
+        .carousel-item .name{
+            width:50px;
+        }
+    
+</style>
+
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="loader">
+            </div>
+        </div>
+    </div>
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="https://themeim.com/demo/eduplan/index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button class="close-btn border-none"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+    
+    <main class="page-wrapper">
+        <div class="nav-area-wrapper-relative">
+            <nav class="navbar navbar-area navbar-expand-lg navigation-style-02">
+                <div class="container custom-container custom-container-01">
+                    <div class="responsive-menu">
+                        <div class="logo-wrapper" style="margin-top:-25px;margin-left:25px">
+                            <a href="index.html" class="logo">
+                                <img src="assets/img/Logos/logo.png" alt="">
+                            </a>
+                        </div>
+                        <button class="navbar-toggler navbar-bs-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#themeim_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="themeim_main_menu">
+                        <ul class="navbar-nav">
+                         
+                            <li><a href="index.html">Home</a></li>
+                            
+
+
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="services-details.html">Service</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-right-content">
+                        <div class="icon-part">
+                            <ul>
+                                <li id="search"><a href="#"><img src="assets/img/icon/search-icon.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                      
+
+
+                    </div>
+                    <div class="btn-wrap">
+                        <button type="button" class="btn btn-info signup btn-common nav-btn" data-bs-toggle="modal" data-bs-target="#formModal">
+                            Free Consultation
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+      
+        <section class="banner-area home-01">
+            <div class="container custom-container-01">
+                <div class="banner-wrapper">
+                    <div class="row">
+                        <div class="col-xl-7 col-lg-10">
+                            <div class="banner-inner">
+                                <h1 class="title">Your <span>success</span> journey start with us!</h1>
+                                <p>Education is the most powerful weapon which you can use to<br> change the world.</p>
+                                <div class="header-btn" >
+                                 
+                                                
+                                <div class="btn-wrap ">
+                                    <button type="button" class=" nav-btn btn-common flat-btn btn-active" data-bs-toggle="modal" data-bs-target="#formModal">
+                                        Apply Online
+                                    </button>
+                                </div>
+                                    <div class="btn-wrap margin-left-20">
+                                        <a href="#" class="btn-common fill-btn">Discover</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="thumbnail">
+                                <img src="assets/img/shapes/Ellipse-01.png" class="element-01" alt="Ellipse">
+                                <img src="assets/img/shapes/Vector-15.png" class="element-03" alt="vector">
+                                <img src="assets/img/header/plane.png" class="element-04" alt="plane">
+                                <img src="assets/img/icon/location.png" class="element-05" alt="location">
+                                <img src="assets/img/header/header-img.png" class="banner-img" alt="Student">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section margin-top-100">
+            <img src="assets/img/shapes/graduation.png" class="shape" alt="graduation cap">
+            <div class="container custom-container-01">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box-item">
+                            <div class="icon">
+                                <img src="assets/img/icon/idea.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">One Stop Study Solution</h4>
+                                <p>Get a full view so you know where to save. Track spending, deta keep tab subscription
+                                    lorem ipsum text</p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#0" class="more-btn">Learn More <i class="fa-solid fa-angle-right icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box-item">
+                            <div class="icon">
+                                <img src="assets/img/icon/coversation.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">One To One Discussion</h4>
+                                <p>Get a full view so you know where to save. Track spending, deta keep tab subscription
+                                    lorem ipsum text</p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#0" class="more-btn">Learn More <i class="fa-solid fa-angle-right icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="icon-box-item">
+                            <div class="icon">
+                                <img src="assets/img/icon/emergency.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h4 class="title">End To End Support</h4>
+                                <p>Get a full view so you know where to save. Track spending, deta keep tab subscription
+                                    lorem ipsum text</p>
+                            </div>
+                            <div class="btn-wrap">
+                                <a href="#0" class="more-btn">Learn More <i class="fa-solid fa-angle-right icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section class="margin-top-110 section-bottom-space">
+            <div class="destination-section">
+                <img src="assets/img/shapes/mountant.png"
+                    class="shape-01 wow animate__animated animate__delay-1s animate__fadeInUp" alt="mountant">
+                <div class="plane-wrap">
+                    <img src="assets/img/shapes/plane.png" class="shape-02" alt="mountant">
+                </div>
+                <div class="container custom-container-01">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="theme-section-title desktop-center text-center">
+                                <h4 class="title">Top Destinations</h4>
+                                <p>We have quality partners in a variety of destinations around the globe.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide destination-single-item desktop-center">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/destination/canda.png" alt="">
+                                </div>
+                                <h6 class="name">Canada</h6>
+                            </div>
+                            <div class="swiper-slide destination-single-item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/destination/usa.png" alt="">
+                                </div>
+                                <h6 class="name">America</h6>
+                            </div>
+                            <div class="swiper-slide destination-single-item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/destination/australia.png" alt="">
+                                </div>
+                                <h6 class="name">Australia</h6>
+                            </div>
+                            <div class="swiper-slide destination-single-item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/destination/span.png" alt="">
+                                </div>
+                                <h6 class="name">Spain</h6>
+                            </div>
+                            <div class="swiper-slide destination-single-item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/destination/franch.png" alt="">
+                                </div>
+                                <h6 class="name">France</h6>
+                            </div>
+                            <div class="swiper-slide destination-single-item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/destination/swideen.png" alt="">
+                                </div>
+                                <h6 class="name">Sweden</h6>
+                            </div>
+                            <div class="swiper-slide destination-single-item">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/destination/italy.png" alt="">
+                                </div>
+                                <h6 class="name">Italy</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Swiper -->
+        
+                    <div class="btn-wrap desktop-center margin-top-40 text-center">
+                        <button type="button" class="btn btn-info signup btn-common nav-btn" data-bs-toggle="modal" data-bs-target="#formModal">
+                            Apply Online
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="about-section-area section-top-space about-home-02">
+            <div class="container custom-container-01">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="theme-section-title">
+                            <span class="subtitle">ABOUT US & EXPERIENCE</span>
+                            <h4 class="title">Moving beyond product innovation to gain a competitive advantage
+                                <svg class="title-shape style-01" width="355" height="15" viewBox="0 0 355 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="path" d="M351.66 12.6362C187.865 -6.32755 49.6478 6.37132 3.41142 12.6362" stroke="#764AF1" stroke-width="3" stroke-linecap="square" />
+                                    <path class="path" d="M351.66 13C187.865 -5.96378 49.6478 6.73509 3.41142 13" stroke="#764AF1" stroke-width="3" stroke-linecap="square" />
+                                    <path class="path" d="M2.5 5.5C168.5 2.0001 280.5 -1.49994 352.5 8.49985" stroke="#FFC44E" stroke-width="3" stroke-linecap="square" />
+                                </svg>
+                            </h4>
+                        </div>
+                        <div class="about-content-wrap">
+                            <p>Ouya Education, which is based in Victoria, British Columbia, Canada, frequently deals with issues of employment (recruitment and retention) for temporary foreign workers (TFW), as well as temporary and permanent residency applications and other general immigration matters with Canadian federal departments (IRCC and CBSA).</p>
+                            <p>Education also provides educational consulting services for student clients who want to study in Canada, and require help with the application process.</p>
+                            <span class="core">Core strength</span>
+                        </div>
+                        <div class="counter-section-inner style-a">
+                            <div class="single-counterup color-01">
+                                <div class="content-wrap">
+                                    <div class="odo-area">
+                                        <h3 class="odometer odo-title" data-odometer-final="15">0</h3>
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="subtitle">Years Experience</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-counterup color-02">
+                                <div class="content-wrap">
+                                    <div class="odo-area">
+                                        <h3 class="odometer odo-title style-01" data-odometer-final="875">0</h3>
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="subtitle">VISA Approved</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-counterup color-03">
+                                <div class="content-wrap">
+                                    <div class="odo-area">
+                                        <h3 class="odometer odo-title style-02" data-odometer-final="96">0</h3>
+                                        <h3 class="title">%</h3>
+                                    </div>
+                                    <div class="content">
+                                        <h6 class="subtitle">Admission success</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <a href="#" class="btn btn-primary">Get Free Consultation</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="thumbnail">
+                            <img src="assets/img/sections/about/student-in-library.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="category-section-area">
+            <div class="container custom-container-01">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-wrapper d-flex justify-content-between">
+                            <div class="theme-section-title">
+                                <span class="subtitle">CATEGORIES</span>
+                                <h4 class="title">Popular Discipline & Collage</h4>
+                            </div>
+                            <ul class="nav nav-pills" style="display:inline-flex">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active" data-bs-toggle="pill" data-bs-target="#discipline">Discipline</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#collage">Collage</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="discipline" style="margin-left:70px;">
+                        <div class="destination-items-wrap">
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/desipline/news-paper.png" alt="">
+                                </div>
+                                <h6 class="name">COMPETITIVE EXAMS</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/desipline/first-aid-kit.png" alt="">
+                                </div>
+                                <h6 class="name">NEET</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/desipline/law.png" alt="">
+                                </div>
+                                <h6 class="name">IIT-JEE</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/desipline/enverment.png" alt="">
+                                </div>
+                                <h6 class="name">AGRICULTURE/<br>ENGINEERING</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/desipline/humanity.png" alt="">
+                                </div>
+                                <h6 class="name">BEMS</h6>
+                            </div>
+                            <div class="destination-single-item style-01">
+                                <div class="thumbnail">
+                                    <img src="assets/img/sections/desipline/recicle.png" alt="">
+                                </div>
+                                <h6 class="name">MEMS</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+        
+        <section class="destination-section style-01 margin-top-110 instruction">
+            <div class="container custom-container-01">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="theme-section-title desktop-center text-center">
+                            <span class="subtitle">STEPS</span>
+                            <h4 class="title">Steps to Get your Destination</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-items-wrap">
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="assets/img/icon/step-01.png" alt="">
+                        </div>
+                        <h6 class="name">Comprehensive Syllabus</h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="assets/img/icon/step-02.png" alt="">
+                        </div>
+                        <h6 class="name">Focused Coaching</h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="assets/img/icon/step-03.png" alt="">
+                        </div>
+                        <h6 class="name">Experienced Faculty</h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="assets/img/icon/step-04.png" alt="">
+                        </div>
+                        <h6 class="name">Business & <br> Management</h6>
+                    </div>
+                    <div class="destination-single-item style-02">
+                        <div class="thumbnail">
+                            <img src="assets/img/icon/step-05.png" alt="">
+                        </div>
+                        <h6 class="name">Computer <br> Science & IT</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-section-area margin-top-110">
+            <div class="container custom-container-01">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12">
+                        <div class="theme-section-title desktop-center text-center">
+                            <span class="subtitle">EDUPLAN UPDATES</span>
+                            <h4 class="title">Eduplan Latest Blog</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-grid-item">
+                            <div class="thumbnail">
+                                <img src="assets/img/h-blog/01.png" alt="" class="border-radius-20">
+                            </div>
+                            <div class="content">
+                                <ul class="post-categories">
+                                    <li><img src="assets/img/icon/calander.png" alt="">19th Jan 2022</li>
+                                    <li>12 noon to 4 pm</li>
+                                </ul>
+                                <h4 class="title">Overseas Education Fair Amravati 2023</h4>
+                                <div class="btn-wrap">
+                                    <a href="#0" class="more-btn">Read More <i
+                                            class="fa-solid fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-grid-item">
+                            <div class="thumbnail">
+                                <img src="assets/img/h-blog/02.png" alt="">
+                            </div>
+                            <div class="content">
+                                <ul class="post-categories">
+                                    <li><img src="assets/img/icon/calander.png" alt="">19th Jan 2022</li>
+                                    <li>12 noon to 4 pm</li>
+                                </ul>
+                                <h4 class="title">Overseas Education Fair Amravati 2023</h4>
+                                <div class="btn-wrap">
+                                    <a href="#0" class="more-btn">Read More <i
+                                            class="fa-solid fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="blog-grid-item">
+                            <div class="thumbnail">
+                                <img src="assets/img/h-blog/03.png" alt="">
+                            </div>
+                            <div class="content">
+                                <ul class="post-categories">
+                                    <li><img src="assets/img/icon/calander.png" alt="">19th Jan 2022</li>
+                                    <li>12 noon to 4 pm</li>
+                                </ul>
+                                <h4 class="title">Overseas Education Fair Amravati 2023</h4>
+                                <div class="btn-wrap">
+                                    <a href="#0" class="more-btn">Read More <i
+                                            class="fa-solid fa-angle-right icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-area style-01">
+            <div class="footer-top">
+                <div class="container custom-container-01">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="footer-widget widget widget_subscribe">
+                                <div class="subscibe-wrapper">
+                                    <div class="content-wrap">
+                                        <div class="icon">
+                                            <img src="assets/img/icon/newslater.png" alt="">
+                                        </div>
+                                        <div class="content">
+                                            <h4 class="title">Subscribe our newsletter</h4>
+                                            <p>Enter your mail address to get our updates, offer and study abroad
+                                                related all updates</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="subscribe-form">
+                                        <div class="form-group">
+                                            <input type="text" name="fname" placeholder="Enter your Email..."
+                                                class="form-control" required="" aria-required="true">
+                                            <div class="btn-wrap">
+                                                <a href="https://themeim.com/" class="subscribe-btn">
+                                                    <img src="assets/img/icon/bell.png" alt="">subscribe</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-middle">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="footer-widget widget widget_nav_menu">
+                                    <h4 class="widget-headline">Important Links</h4>
+                                    <ul>
+                                        <li><a href="#">Terms and conditions</a></li>
+                                        <li><a href="#">Disclaimer and copyright</a></li>
+                                        <li><a href="#">Cookie policy</a></li>
+                                        <li><a href="#">Privacy policy</a></li>
+                                        <li><a href="#">Equality and diversity</a></li>
+                                        <li><a href="#">Complaints procedure</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="footer-widget widget widget_nav_menu">
+                                    <h4 class="widget-headline">Site Highlight</h4>
+                                    <ul>
+                                        <li><a href="#">Student videos</a></li>
+                                        <li><a href="#">Photo gallery</a></li>
+                                        <li><a href="#">TSC prospectus</a></li>
+                                        <li><a href="#">Student newsletter</a></li>
+                                        <li><a href="#">Student portal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-6">
+                                <div class="footer-widget widget widget_nav_menu">
+                                    <h4 class="widget-headline">Help Center</h4>
+                                    <ul>
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">How to apply for admission</a></li>
+                                        <li><a href="#">Admission Documents</a></li>
+                                        <li><a href="#">Frequently asked questions</a></li>
+                                        <li><a href="#">Student accommodation</a></li>
+                                        <li><a href="#">Student Jobs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="footer-widget widget widget_nav_menu">
+                                    <h4 class="widget-headline">Services</h4>
+                                    <ul>
+                                        <li><a href="#">Counselling</a></li>
+                                        <li><a href="#">Test Preparation</a></li>
+                                        <li><a href="#">Admission</a></li>
+                                        <li><a href="#">Education Loan</a></li>
+                                        <li><a href="#">Visa Processing</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-6 col-sm-6">
+                                <div class="footer-widget widget widget_nav_menu">
+                                    <h4 class="widget-headline">Location</h4>
+                                    <ul class="contact_info_list">
+                                        <li class="single-info-item">
+                                            <div class="icon">
+                                                <img src="assets/img/icon/location-02.png" alt="">
+                                            </div>
+                                            <div class="details">
+                                                8502 Preston Rd. Inglewood, Maine Bangladesh
+                                            </div>
+                                        </li>
+                                        <li class="single-info-item">
+                                            <div class="icon me-4">
+                                                <img src="assets/img/icon/edu-award.png" alt="">
+                                            </div>
+                                            <div class="icon">
+                                                <img src="assets/img/icon/iso.png" alt="">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container custom-container-01">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright-area-inner">
+                                <p>© 2022 Eduplan. All rights reserved | Developed By <span>Themeim</span></p>
+                                <div class="footer-social-area">
+                                    <ul class="social-icon-02">
+                                        <li><a href="#0"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#0"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#0"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+  
+    </main>
+
+ 
+    
+    
+
+
+    <div id="formModal" class="modal fade" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm" action="your-server-side-script.php" method="POST">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" class="form-control" id="username" name="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="signupEmail" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="signupEmail" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobile" class="form-label">Mobile Number:</label>
+                            <input type="tel" class="form-control" id="mobile" name="mobile" required pattern="[0-9]{10}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Qualification" class="form-label">Qualification:</label>
+                            <input type="type" class="form-control" id="Qualification" name="Qualification" required>
+                        </div>
+                        <div class="mb-3"></div>
+                            <label for="Describtion" class="form-label">Describtion:</label>
+                            <input type="type" class="form-control" id="Describtion" name="Describtion" required>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  
+
+<script>
+    $(document).ready(function() {
+        $('#formModal').on('show.bs.modal', function() {
+            $('#signupForm')[0].reset();
+        });
+    });
+</script>
+
+  
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Load jQuery before using any jQuery code -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3, // Adjust as necessary
+        spaceBetween: 30,  // Adjust space between slides
+        loop: true,        // Loop the slides
+        autoplay: {
+            delay: 2500,   // Delay between slides
+            disableOnInteraction: false, // Continue autoplay after interaction
+        },
+        breakpoints: {
+            // When window width is >= 640px
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // When window width is >= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            // When window width is >= 1024px
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const odometers = document.querySelectorAll('.odometer');
+
+        odometers.forEach(odo => {
+            const finalValue = parseInt(odo.getAttribute('data-odometer-final'), 10);
+            let count = 0;
+            const interval = setInterval(() => {
+                if (count < finalValue) {
+                    count++;
+                    odo.innerText = count;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 100); // Adjust speed as needed
+        });
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
